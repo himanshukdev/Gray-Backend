@@ -16,10 +16,10 @@ const isAuthenticated = (req, res, next) => {
   return res.status(401).json({ message: 'Unauthorized' });
 };
 
-Router.get('/all-task', isAuthenticated, getAllTask);
-Router.get('/get-task/:id', isAuthenticated, getTaskById);
-Router.post('/add-task', isAuthenticated, addTask);
-Router.put('/update-task/:id', isAuthenticated, updateTask);
-Router.delete('/delete-task/:id', isAuthenticated, deleteTaskById);
+Router.get('/all-task',  getAllTask);
+Router.get('/get-task/:id',  getTaskById);
+Router.post('/add-task',  addTask);
+Router.put('/update-task/:id',  updateTask);
+Router.delete('/delete-task/:id', deleteTaskById);
 
 module.exports = Router;
