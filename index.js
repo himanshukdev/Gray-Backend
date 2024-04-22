@@ -14,7 +14,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: process.env.client_domain_url, // Replace with your React app's URL
+    origin: "https://gray-frontend-eta.vercel.app", // Replace with your React app's URL
     credentials: true, // Enable credentials (cookies) for cross-origin requests
   }),
 );
